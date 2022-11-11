@@ -15,7 +15,7 @@ CONSTRUCT {
     ?answer_iri rdfs:label ?answer .
 }
 WHERE {
-    SERVICE <x-sparql-anything:file:///Users/amp/src/survey-kg/surveyExtraction.xlsx> {        
+    SERVICE <x-sparql-anything:file:./surveyExtraction.xlsx> {        
         ?r a fx:root ;
             ?p ?row .
         ?row rdf:_1 ?part ;
