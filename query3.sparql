@@ -1,0 +1,20 @@
+PREFIX  xyz:  <http://sparql.xyz/facade-x/data/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX  ex:   <http://example.com/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX wd:       <http://www.wikidata.org/entity/>         # Wikibase entity - item or property. 
+PREFIX wdt:      <http://www.wikidata.org/prop/direct/>    # Truthy assertions about the data, links entity to value directly. 
+select *
+WHERE
+  { SERVICE <https://query.wikidata.org/sparql>
+      {
+       
+#Music composers by birth place
+#defaultView:Map
+  ?item wdt:P106 wd:Q36834;   # occupation: composer
+        wdt:P18 ?_image;   # with an image depicting them
+        wdt:P19/wdt:P625 ?_coordinates   # their birthplace, specifically the coordinates of their birthplace
+
+      }
+  } limit 50

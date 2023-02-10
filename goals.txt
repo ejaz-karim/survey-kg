@@ -1,0 +1,1 @@
+outside links - add links from web into my .ttl

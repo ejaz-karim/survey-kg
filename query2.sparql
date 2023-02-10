@@ -3,6 +3,8 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX fx: <http://sparql.xyz/facade-x/ns/>
 PREFIX pfn: <https://polifonia-project.eu/resource/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd:       <http://www.wikidata.org/entity/>         # Wikibase entity - item or property. 
+PREFIX wdt:      <http://www.wikidata.org/prop/direct/>    # Truthy assertions about the data, links entity to value directly. 
 
 CONSTRUCT {
     ?pilot_iri a pfn:pilot ;
@@ -20,7 +22,8 @@ CONSTRUCT {
     
     ?answer_iri rdfs:label ?answer ;
         rdfs:seeAlso ?question_iri .
-}
+        }
+
 WHERE {
     SERVICE <x-sparql-anything:file:./surveyExtraction.xlsx> {        
         ?r a fx:root ;
@@ -30,6 +33,12 @@ WHERE {
             rdf:_3 ?pilot ;
             rdf:_4 ?answer .
     }
+   SERVICE <https://query.wikidata.org/sparql> { 
+       ?item wdt:P106 wd:Q36834;   # occupation: composer
+       wdt:P18 ?_image;   # with an image depicting them
+       wdt:P19/wdt:P625 ?_coordinates   # their birthplace, specifically the coordinates of their birthplace
+       }
+      
     BIND(IRI(CONCAT("https://polifonia-project.eu/resource/pilot/", STR(ENCODE_FOR_URI(?pilot)))) as ?pilot_iri)
     BIND(IRI(CONCAT("https://polifonia-project.eu/resource/part/", STR(ENCODE_FOR_URI(?part)))) as ?part_iri)
     BIND(IRI(CONCAT("https://polifonia-project.eu/resource/question/", STR(ENCODE_FOR_URI(SHA1(?question))))) as ?question_iri)
