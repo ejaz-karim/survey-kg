@@ -1,1 +1,5 @@
-outside links - add links from web into my .ttl
+>outside links - add links from web into my .ttl
+>Each label should show its Music category
+>Each label should show its pilot's goals
+>Each label should show its Part (e.g. Technical part)
+>Concat answers is one solution -> Concat answers belonging to a ?pilot and ?question

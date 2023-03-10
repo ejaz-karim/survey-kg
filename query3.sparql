@@ -1,20 +1,47 @@
-PREFIX  xyz:  <http://sparql.xyz/facade-x/data/>
-PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
-PREFIX  fx:   <http://sparql.xyz/facade-x/ns/>
-PREFIX  ex:   <http://example.com/>
-PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX wd:       <http://www.wikidata.org/entity/>         # Wikibase entity - item or property. 
-PREFIX wdt:      <http://www.wikidata.org/prop/direct/>    # Truthy assertions about the data, links entity to value directly. 
-select *
-WHERE
-  { SERVICE <https://query.wikidata.org/sparql>
-      {
-       
-#Music composers by birth place
-#defaultView:Map
-  ?item wdt:P106 wd:Q36834;   # occupation: composer
-        wdt:P18 ?_image;   # with an image depicting them
-        wdt:P19/wdt:P625 ?_coordinates   # their birthplace, specifically the coordinates of their birthplace
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX fx:  <http://sparql.xyz/facade-x/ns/>
+PREFIX pfn: <https://polifonia-project.eu/resource/>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd:  <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
-      }
-  } limit 50
+PREFIX ex: <http://example.com/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+	# ?pilot_iri a pfn:pilot ;
+  #   rdfs:pilot ?pilot .
+  
+
+
+  # ?question_iri a pfn:question ;
+  #   rdfs:question ?question ;
+  #   rdfs:answer ?answer .
+
+  # ?answer_iri a pfn:answer ;
+  #   rdfs:answer ?answer ;
+  #   rdfs:question ?question ;
+  #   rdfs:pilot ?pilot .
+
+  ?s ex:property1 ""
+
+        
+        }
+
+WHERE {
+    SERVICE <x-sparql-anything:file:./surveyExtraction.xlsx> {        
+        ?r a fx:root ;
+            ?p ?row .
+        ?row rdf:_1 ?part ;
+            rdf:_2 ?question ;
+            rdf:_3 ?pilot ;
+            rdf:_4 ?answer .
+        
+    }
+
+    BIND(IRI(CONCAT("https://polifonia-project.eu/resource/pilot/", STR(ENCODE_FOR_URI(?pilot)))) as ?pilot_iri)
+    BIND(IRI(CONCAT("https://polifonia-project.eu/resource/part/", STR(ENCODE_FOR_URI(?part)))) as ?part_iri)
+    BIND(IRI(CONCAT("https://polifonia-project.eu/resource/question/", STR(ENCODE_FOR_URI(SHA1(?question))))) as ?question_iri)
+    BIND(IRI(CONCAT("https://polifonia-project.eu/resource/answer/", STR(ENCODE_FOR_URI(SHA1(?answer))))) as ?answer_iri)
+}

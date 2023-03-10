@@ -15,14 +15,15 @@ CONSTRUCT {
     
     ?part_iri pfn:hasQuestion ?question_iri ;
         rdfs:label ?part ;
-        pfn:hasQuestion ?question_iri .
+        pfn:hasQuestion ?question ;
+        pfn:hasAnswer ?answer_iri .
 
     ?question_iri pfn:hasAnswer ?answer_iri ;
         rdfs:label ?question .
     
     ?answer_iri rdfs:label ?answer ;
         rdfs:seeAlso ?question_iri .
-        }
+}
 
 WHERE {
     SERVICE <x-sparql-anything:file:./surveyExtraction.xlsx> {        
@@ -37,5 +38,6 @@ WHERE {
     BIND(IRI(CONCAT("https://polifonia-project.eu/resource/pilot/", STR(ENCODE_FOR_URI(?pilot)))) as ?pilot_iri)
     BIND(IRI(CONCAT("https://polifonia-project.eu/resource/part/", STR(ENCODE_FOR_URI(?part)))) as ?part_iri)
     BIND(IRI(CONCAT("https://polifonia-project.eu/resource/question/", STR(ENCODE_FOR_URI(SHA1(?question))))) as ?question_iri)
-    BIND(IRI(CONCAT("https://polifonia-project.eu/resource/answer/", STR(ENCODE_FOR_URI(SHA1(?answer))))) as ?answer_iri)
+    BIND(IRI(CONCAT("https://polifonia-project.eu/resource/answer/", STR(ENCODE_FOR_URI(SHA1(CONCAT(?pilot, ?question, ?answer)))))) as ?answer_iri)
 }
+GROUP BY ?pilot ?part ?question ?pilot_iri ?part_iri ?question_iri
