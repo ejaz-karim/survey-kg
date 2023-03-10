@@ -3,3 +3,12 @@
 >Each label should show its pilot's goals
 >Each label should show its Part (e.g. Technical part)
 >Concat answers is one solution -> Concat answers belonging to a ?pilot and ?question
+
+Pilot and Question needs to be linked and not be represented as dupes, but rather as one.
+
+Unique Pilot
+	->Unique Part
+	->Unique question
+	->Answer x
+	...
+	->Answer xn
