@@ -1,7 +1,7 @@
 # survey-kg
-Setup: Windows 10, Ubuntu 20.04, vscode/vscodium, Stardog/RDF Languages Extension Pack, sparql-anything-0.8.1.jar, Java
+Setup: Ubuntu 20.04, vscode/vscodium, Stardog/RDF Languages Extension Pack, sparql-anything-0.8.1.jar, Java
 
-```sparql-anything-<version>.jar``` from https://github.com/SPARQL-Anything/sparql.anything/releases
+```sparql-anything-<version>.jar``` from https://github.com/SPARQL-Anything/sparql.anything/releases is required to run this project
   
 ```sparql-anything-<version>.jar``` must be located in the same directory as ```surveyExtraction.xlsx```
   
