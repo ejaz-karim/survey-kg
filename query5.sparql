@@ -19,13 +19,7 @@ CONSTRUCT {
 
     ?question_iri pfn:hasAnswer ?answer_iri ;
         rdfs:label ?question ;
-        pfn:hasAnswerText ?answer_text ;
-        pfn:hasPilotAnswer ?pilot_answer .
-
-    ?pilot_answer a pfn:PilotAnswer ;
-        pfn:hasPilot ?pilot_iri ;
-        pfn:hasAnswer ?answer_iri ;
-        pfn:hasText ?answer .
+        ?pilot_iri ?answer_text .
 
     ?answer_iri rdfs:label ?answer ;
         rdfs:seeAlso ?question_iri .
@@ -46,7 +40,7 @@ WHERE {
         BIND(IRI(CONCAT("https://polifonia-project.eu/resource/answer/", STR(ENCODE_FOR_URI(SHA1(?answer))))) as ?answer_iri)
     }
 
-    # Group answers by related questions and pilots
+    # Group answers by related questions and pilot
     {
         SELECT ?question_iri ?pilot_iri (GROUP_CONCAT(?answer; SEPARATOR="; ") AS ?answer_text) {
             SERVICE <x-sparql-anything:file:./surveyExtraction.xlsx> {
@@ -64,16 +58,3 @@ WHERE {
         GROUP BY ?question_iri ?pilot_iri
     }
 }
-
-
-<question iri>
-<question label>
-
-<bells iri>
-<bell answer>
-
-<interlink>
-<interlink answer>
-
-
-
