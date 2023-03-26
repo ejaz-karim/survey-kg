@@ -1,5 +1,5 @@
 # survey-kg
-Setup: Ubuntu 20.04, vscode/vscodium, Stardog/RDF Languages Extension Pack, sparql-anything-0.8.1.jar, Java
+Setup: Ubuntu 20.04, vscode/vscodium, Stardog/RDF Languages Extension Pack, sparql-anything-0.8.1.jar, Java JDK
 
 ```sparql-anything-<version>.jar``` from https://github.com/SPARQL-Anything/sparql.anything/releases is required to run this project
   

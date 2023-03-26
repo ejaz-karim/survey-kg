@@ -1,0 +1,65 @@
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX fx:  <http://sparql.xyz/facade-x/ns/>
+PREFIX pfn: <https://polifonia-project.eu/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd:  <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT {
+    ?pilot_iri a pfn:pilot ;
+        rdfs:label ?pilot ;
+        pfn:hasPart ?part_iri ;
+        pfn:hasPart_label ?part .
+    
+    ?part_iri a pfn:part ;
+        rdfs:label ?part ;
+        pfn:hasQuestion ?question_iri ;
+        pfn:hasQuestion_label ?question .
+    
+    ?question_iri a pfn:question ;
+        rdfs:label ?question ;
+        pfn:hasPart ?part_iri ;
+        pfn:hasPart_label ?part ;
+        ?pilot_iri [ pfn:hasAnswer ?answer_concat ] .
+
+    ?answer_iri a pfn:answer ;
+        rdfs:label ?answer ;
+        pfn:hasQuestion ?question_iri ;
+        pfn:hasQuestion_label ?question ;
+        rdfs:seeAlso ?answer_concat .
+}
+
+WHERE {
+    SERVICE <x-sparql-anything:file:./surveyExtraction.xlsx> {        
+        ?r a fx:root ;
+            ?p ?row .
+        ?row rdf:_1 ?part ;
+            rdf:_2 ?question ;
+            rdf:_3 ?pilot ;
+            rdf:_4 ?answer .
+
+        BIND(IRI(CONCAT("https://polifonia-project.eu/resource/pilot/", STR(ENCODE_FOR_URI(?pilot)))) as ?pilot_iri)
+        BIND(IRI(CONCAT("https://polifonia-project.eu/resource/part/", STR(ENCODE_FOR_URI(?part)))) as ?part_iri)
+        BIND(IRI(CONCAT("https://polifonia-project.eu/resource/question/", STR(ENCODE_FOR_URI(SHA1(?question))))) as ?question_iri)
+        BIND(IRI(CONCAT("https://polifonia-project.eu/resource/answer/", STR(ENCODE_FOR_URI(SHA1(?answer))))) as ?answer_iri)
+    }
+
+    # Concatenate answers by related questions and pilot
+    {
+        SELECT ?question_iri ?pilot_iri (GROUP_CONCAT(?answer; SEPARATOR="; ") AS ?answer_concat) {
+            SERVICE <x-sparql-anything:file:./surveyExtraction.xlsx> {
+                ?r a fx:root ;
+                    ?p ?row .
+                ?row rdf:_1 ?part ;
+                    rdf:_2 ?question ;
+                    rdf:_3 ?pilot ;
+                    rdf:_4 ?answer .
+
+                BIND(IRI(CONCAT("https://polifonia-project.eu/resource/question/", STR(ENCODE_FOR_URI(SHA1(?question))))) as ?question_iri)
+                BIND(IRI(CONCAT("https://polifonia-project.eu/resource/pilot/", STR(ENCODE_FOR_URI(?pilot)))) as ?pilot_iri)
+            }
+        }
+        GROUP BY ?question_iri ?pilot_iri
+    }
+}
