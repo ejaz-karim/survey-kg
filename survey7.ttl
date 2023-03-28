@@ -219,19 +219,19 @@
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/3b124ef26ce5c25cfb9c5b1c12a96c39f378d72b> ;
         pfn:hasQuestion_label  "Please list the controlled vocabularies, taxonomies, thesaurus, ontologies, etc. that you will use in your pilot. Please add links, where possible." .
 
-<https://polifonia-project.eu/resource/answer/d4686efea17ba599158263b44459670534b0bfb5>
-        rdf:type               pfn:answer ;
-        rdfs:label             "- Technical aspects : Information Retrieval metrics (precision, recall, accuracy), computational time to execute queries. Identification of hard/specific score problems for retrieval.- Evaluation setup with a survey from experts, for the UI part." ;
-        rdfs:seeAlso           "- Technical aspects : Information Retrieval metrics (precision, recall, accuracy), computational time to execute queries. Identification of hard/specific score problems for retrieval.- Evaluation setup with a survey from experts, for the UI part." ;
-        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/df47d1f161ef57b91ef55c4d489c04ebacb7df84> ;
-        pfn:hasQuestion_label  "What will be the validation setup?" .
-
 <https://polifonia-project.eu/resource/answer/92a0cac00d23b7a3dbd3540d91ee249f5bd0c6e3>
         rdf:type               pfn:answer ;
         rdfs:label             "People with hearing impairments and other disabilities who visit the Stables Theatre in Milton Keynes and the Milton Keynes International Festival." ;
         rdfs:seeAlso           "People with hearing impairments and other disabilities who visit the Stables Theatre in Milton Keynes and the Milton Keynes International Festival." ;
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/1889d511a9a8a7034a49192ddfaea8e2ad177206> ;
         pfn:hasQuestion_label  "Other?" .
+
+<https://polifonia-project.eu/resource/answer/d4686efea17ba599158263b44459670534b0bfb5>
+        rdf:type               pfn:answer ;
+        rdfs:label             "- Technical aspects : Information Retrieval metrics (precision, recall, accuracy), computational time to execute queries. Identification of hard/specific score problems for retrieval.- Evaluation setup with a survey from experts, for the UI part." ;
+        rdfs:seeAlso           "- Technical aspects : Information Retrieval metrics (precision, recall, accuracy), computational time to execute queries. Identification of hard/specific score problems for retrieval.- Evaluation setup with a survey from experts, for the UI part." ;
+        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/df47d1f161ef57b91ef55c4d489c04ebacb7df84> ;
+        pfn:hasQuestion_label  "What will be the validation setup?" .
 
 <https://polifonia-project.eu/resource/answer/b5f0018182d2264c15e26025ef6301d74a604851>
         rdf:type               pfn:answer ;
@@ -614,6 +614,13 @@
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/c443bafb28442ee4e104f86dfda8c2b658f3722f> ;
         pfn:hasQuestion_label  "What kind of ‘augmentation/enrichment’ do you expect to get out of being displayed via the portal?" .
 
+<https://polifonia-project.eu/resource/answer/3f4c1888802aa4a56fcc6e0d566e88d5ba22c609>
+        rdf:type               pfn:answer ;
+        rdfs:label             "CNAM​: NEUMA score library made available and adapted to include copyright/licence information.KCL: Providing support for the modelling of theories.  OU:    Draft collaborative annotation interface mock-up; Identification of possible representation types/modes to be adopted; Critical discussions on theoretical models." ;
+        rdfs:seeAlso           "CNAM​: NEUMA score library made available and adapted to include copyright/licence information.KCL: Providing support for the modelling of theories.  OU:    Draft collaborative annotation interface mock-up; Identification of possible representation types/modes to be adopted; Critical discussions on theoretical models." ;
+        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/24baa8cf63e142b717e425fc219d9b4752f4c20c> ;
+        pfn:hasQuestion_label  "Beyond the lead institution, who are the partners of the pilot and what is their involvement? " .
+
 <https://polifonia-project.eu/resource/question/78d1a06ede4691d60470f83c05a9a8bf8cb13cbf>
         rdf:type           pfn:question ;
         rdfs:label         "Metadata: What standards are used?" ;
@@ -639,13 +646,6 @@
                 [ pfn:hasAnswer  "OWL, CIDOC-CRM, CRMdig, LRMoo, DCTERMS" ] ;
         <https://polifonia-project.eu/resource/pilot/TUNES>
                 [ pfn:hasAnswer  "n/a" ] .
-
-<https://polifonia-project.eu/resource/answer/3f4c1888802aa4a56fcc6e0d566e88d5ba22c609>
-        rdf:type               pfn:answer ;
-        rdfs:label             "CNAM​: NEUMA score library made available and adapted to include copyright/licence information.KCL: Providing support for the modelling of theories.  OU:    Draft collaborative annotation interface mock-up; Identification of possible representation types/modes to be adopted; Critical discussions on theoretical models." ;
-        rdfs:seeAlso           "CNAM​: NEUMA score library made available and adapted to include copyright/licence information.KCL: Providing support for the modelling of theories.  OU:    Draft collaborative annotation interface mock-up; Identification of possible representation types/modes to be adopted; Critical discussions on theoretical models." ;
-        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/24baa8cf63e142b717e425fc219d9b4752f4c20c> ;
-        pfn:hasQuestion_label  "Beyond the lead institution, who are the partners of the pilot and what is their involvement? " .
 
 <https://polifonia-project.eu/resource/answer/72cfd9ec3807fc0b530286a22aad2a131bfd2f84>
         rdf:type               pfn:answer ;
@@ -682,19 +682,19 @@
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/8e664ab0c949188e4f8b178ff01ed7be543f2c38> ;
         pfn:hasQuestion_label  "What else has to be reported that is not covered by this part? Do you have any remarks?" .
 
-<https://polifonia-project.eu/resource/answer/8d6b09f79a495fbbe7d7c5187783698cb1c3baf5>
-        rdf:type               pfn:answer ;
-        rdfs:label             "https://github.com/polifonia-project/stories/blob/999b68c29e9d9462f217d7c513de7c5e4d902068/Ortenz:%20Music%20Historian/Ortenz%231_MusicAndChildhood.md" ;
-        rdfs:seeAlso           "https://github.com/polifonia-project/stories/blob/999b68c29e9d9462f217d7c513de7c5e4d902068/Ortenz:%20Music%20Historian/Ortenz%231_MusicAndChildhood.md" ;
-        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/5421a0973614454d62aeb5efa3dac1256a00c974> ;
-        pfn:hasQuestion_label  "Please provide links to the Competency Questions  that your pilot aims to answer(Was : Can you provide examples of research questions that the pilot will allow to explore? )" .
-
 <https://polifonia-project.eu/resource/answer/4868262a12a28ce849d27fba8981f00b83eb08d4>
         rdf:type               pfn:answer ;
         rdfs:label             "The new knowledge is anchored to a specific fragment in a source (e.g. \"The note identified by the xml:id \"m-69\" in a MEI file is analyzed as a passing note\");The new knowledge is about a whole document (e.g. \"The composer of this piece is H.I.F. von Biber\"); We are also leveraging standard annotation methods and extending them to symbolic music so that they can be semantically described." ;
         rdfs:seeAlso           "The new knowledge is anchored to a specific fragment in a source (e.g. \"The note identified by the xml:id \"m-69\" in a MEI file is analyzed as a passing note\");The new knowledge is about a whole document (e.g. \"The composer of this piece is H.I.F. von Biber\"); We are also leveraging standard annotation methods and extending them to symbolic music so that they can be semantically described." ;
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/c3ef6eb1c074d5844741335c02de69cddec464e6> ;
         pfn:hasQuestion_label  "Is the new knowledge anchored to a specific fragment in a source? (e.g. \"The note identified by the xml:id \"m-69\" in a MEI file is analyzed as a passing note\") Or is it about a whole document?" .
+
+<https://polifonia-project.eu/resource/answer/8d6b09f79a495fbbe7d7c5187783698cb1c3baf5>
+        rdf:type               pfn:answer ;
+        rdfs:label             "https://github.com/polifonia-project/stories/blob/999b68c29e9d9462f217d7c513de7c5e4d902068/Ortenz:%20Music%20Historian/Ortenz%231_MusicAndChildhood.md" ;
+        rdfs:seeAlso           "https://github.com/polifonia-project/stories/blob/999b68c29e9d9462f217d7c513de7c5e4d902068/Ortenz:%20Music%20Historian/Ortenz%231_MusicAndChildhood.md" ;
+        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/5421a0973614454d62aeb5efa3dac1256a00c974> ;
+        pfn:hasQuestion_label  "Please provide links to the Competency Questions  that your pilot aims to answer(Was : Can you provide examples of research questions that the pilot will allow to explore? )" .
 
 <https://polifonia-project.eu/resource/answer/7ec40b50f0f8a4657162b216756c0628c6cf0d7a>
         rdf:type               pfn:answer ;
@@ -709,6 +709,13 @@
         rdfs:seeAlso           "It references an excerpt in the book but it is not necessarily an annotation." ;
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/c3ef6eb1c074d5844741335c02de69cddec464e6> ;
         pfn:hasQuestion_label  "Is the new knowledge anchored to a specific fragment in a source? (e.g. \"The note identified by the xml:id \"m-69\" in a MEI file is analyzed as a passing note\") Or is it about a whole document?" .
+
+<https://polifonia-project.eu/resource/answer/a5e5afe27ef529083580fec319c1dbb9a1caef33>
+        rdf:type               pfn:answer ;
+        rdfs:label             "It is planned to create an annotation interface that will allow discussion and relativization of the results obtained. " ;
+        rdfs:seeAlso           "It is planned to create an annotation interface that will allow discussion and relativization of the results obtained. " ;
+        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/9792aa6f7745a3dc22d3cb3ea85d6b8b92271aa3> ;
+        pfn:hasQuestion_label  "Should it be possible to represent hypotheses and/or statements with varying degrees of certainty?" .
 
 <https://polifonia-project.eu/resource/question/f2bda02e09558888bb51375511ec4628a12052a2>
         rdf:type           pfn:question ;
@@ -733,13 +740,6 @@
                 [ pfn:hasAnswer  "It may possibly contain factual errors." ] ;
         <https://polifonia-project.eu/resource/pilot/TONALITIES>
                 [ pfn:hasAnswer  "Analytical results may be subject to discord. Tonalities aims to make these inconsistencies explicit by offering several analyses of the same work. These analyses are either created from the same theoretical model or from different models. " ] .
-
-<https://polifonia-project.eu/resource/answer/a5e5afe27ef529083580fec319c1dbb9a1caef33>
-        rdf:type               pfn:answer ;
-        rdfs:label             "It is planned to create an annotation interface that will allow discussion and relativization of the results obtained. " ;
-        rdfs:seeAlso           "It is planned to create an annotation interface that will allow discussion and relativization of the results obtained. " ;
-        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/9792aa6f7745a3dc22d3cb3ea85d6b8b92271aa3> ;
-        pfn:hasQuestion_label  "Should it be possible to represent hypotheses and/or statements with varying degrees of certainty?" .
 
 <https://polifonia-project.eu/resource/question/f05895431831cb7f1bdc96752e5cc3731ead6ee2>
         rdf:type           pfn:question ;
@@ -807,19 +807,19 @@
         <https://polifonia-project.eu/resource/pilot/TUNES>
                 [ pfn:hasAnswer  "Validation of interfaces by users/experts; Validation of results by ground truth" ] .
 
-<https://polifonia-project.eu/resource/answer/7c728fffda7cff12c58c6815a1c0a6b16e056fb6>
-        rdf:type               pfn:answer ;
-        rdfs:label             "noy yet defined" ;
-        rdfs:seeAlso           "noy yet defined" ;
-        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/0904646edaac08c6ce7a61844cfe5565660c0038> ;
-        pfn:hasQuestion_label  "What values for KPIs/metrics shall be achieved for claiming success?" .
-
 <https://polifonia-project.eu/resource/answer/489f4877244a299131d309f0ca10733c1a41251c>
         rdf:type               pfn:answer ;
         rdfs:label             "Score" ;
         rdfs:seeAlso           "Sound sources; Image collections: iconographic items, diagrammatic items, etc.; Texts: poetry, librettos, writings about music, correspondence, theoretical sources, documents about gestuality, technical documents, etc.; Score" ;
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/3dc64e423451f340060a9f80c36713c3f46fb796> ;
         pfn:hasQuestion_label  "What is the nature of the sources?" .
+
+<https://polifonia-project.eu/resource/answer/7c728fffda7cff12c58c6815a1c0a6b16e056fb6>
+        rdf:type               pfn:answer ;
+        rdfs:label             "noy yet defined" ;
+        rdfs:seeAlso           "noy yet defined" ;
+        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/0904646edaac08c6ce7a61844cfe5565660c0038> ;
+        pfn:hasQuestion_label  "What values for KPIs/metrics shall be achieved for claiming success?" .
 
 <https://polifonia-project.eu/resource/question/1202773ef7e1c927e3c1847417746bc7a7cb7b88>
         rdf:type           pfn:question ;
@@ -2048,19 +2048,19 @@
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/c17da901c7034f08c305cf622c1e047de4351525> ;
         pfn:hasQuestion_label  "Describe the knwoledge units produced  (melodic patterns, intertextual units, networks of composers and compositions, ...) " .
 
-<https://polifonia-project.eu/resource/answer/cfc61641adb740d69f2fa5dc842d8c2dde859e36>
-        rdf:type               pfn:answer ;
-        rdfs:label             "The Polifonia Corpus (probably)" ;
-        rdfs:seeAlso           "The Polifonia Corpus (probably)" ;
-        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/084333de628f14da1ae5e5be9bfc0b6d78efa12e> ;
-        pfn:hasQuestion_label  "Are there planned overlaps (already defined or envisioned) between the pilot’s resources and other resources used within Polifonia?" .
-
 <https://polifonia-project.eu/resource/answer/bc8c88565cd25194e23ab24fe94272534271b5c4>
         rdf:type               pfn:answer ;
         rdfs:label             "The list of books/texts is under development" ;
         rdfs:seeAlso           "The list of books/texts is under development" ;
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/1700b63bd16a05f0f450258b420146726863782f> ;
         pfn:hasQuestion_label  "If your sources are online, can you provide links to the sources in a (partial) list? Some sources with licence/copyright info are identified here: https://docs.google.com/spreadsheets/d/1cJ5oipaeJCibNVV9fX4sYMeEotiU69Gfea3bloF2TQU/edit#gid=0  " .
+
+<https://polifonia-project.eu/resource/answer/cfc61641adb740d69f2fa5dc842d8c2dde859e36>
+        rdf:type               pfn:answer ;
+        rdfs:label             "The Polifonia Corpus (probably)" ;
+        rdfs:seeAlso           "The Polifonia Corpus (probably)" ;
+        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/084333de628f14da1ae5e5be9bfc0b6d78efa12e> ;
+        pfn:hasQuestion_label  "Are there planned overlaps (already defined or envisioned) between the pilot’s resources and other resources used within Polifonia?" .
 
 <https://polifonia-project.eu/resource/answer/1f4505cdc89b61a60c906fc8245e447d48a09a5d>
         rdf:type               pfn:answer ;
@@ -2447,19 +2447,19 @@
         <https://polifonia-project.eu/resource/pilot/TONALITIES>
                 [ pfn:hasAnswer  "The analytical annotation interface and the semantic model will be suitable for collaborative work. " ] .
 
-<https://polifonia-project.eu/resource/answer/4fa9879e1eae971629ef45f7abe8debf65477a43>
-        rdf:type               pfn:answer ;
-        rdfs:label             "The knowledge extracted could be a subject of debate." ;
-        rdfs:seeAlso           "The knowledge extracted could be a subject of debate." ;
-        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/f2bda02e09558888bb51375511ec4628a12052a2> ;
-        pfn:hasQuestion_label  "Can the new knowledge be the subject of dissensus?" .
-
 <https://polifonia-project.eu/resource/answer/607b7c79f24174fa66be1955dde167142ea95e46>
         rdf:type               pfn:answer ;
         rdfs:label             "There is envisioned overlap with TONALITIES and INTERLINK.Also with FACETS." ;
         rdfs:seeAlso           "There is envisioned overlap with TONALITIES and INTERLINK.Also with FACETS." ;
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/084333de628f14da1ae5e5be9bfc0b6d78efa12e> ;
         pfn:hasQuestion_label  "Are there planned overlaps (already defined or envisioned) between the pilot’s resources and other resources used within Polifonia?" .
+
+<https://polifonia-project.eu/resource/answer/4fa9879e1eae971629ef45f7abe8debf65477a43>
+        rdf:type               pfn:answer ;
+        rdfs:label             "The knowledge extracted could be a subject of debate." ;
+        rdfs:seeAlso           "The knowledge extracted could be a subject of debate." ;
+        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/f2bda02e09558888bb51375511ec4628a12052a2> ;
+        pfn:hasQuestion_label  "Can the new knowledge be the subject of dissensus?" .
 
 <https://polifonia-project.eu/resource/question/5f31770ca23681bfa360ead43cac625299af3450>
         rdf:type           pfn:question ;
@@ -3373,19 +3373,19 @@
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/c17da901c7034f08c305cf622c1e047de4351525> ;
         pfn:hasQuestion_label  "Describe the knwoledge units produced  (melodic patterns, intertextual units, networks of composers and compositions, ...) " .
 
-<https://polifonia-project.eu/resource/answer/dd3bacb1ac8d0049dafacda56358c776672922a8>
-        rdf:type               pfn:answer ;
-        rdfs:label             "Music Information retrieval" ;
-        rdfs:seeAlso           "Music Information retrieval; Machine Learning." ;
-        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/6885ede460472ba7e428311224a67e17251b26da> ;
-        pfn:hasQuestion_label  "To which discipline / subdiscipline  / specialty do you aim to contribute knowledge?  " .
-
 <https://polifonia-project.eu/resource/answer/fadc119a87165aefda56d14f07d03073b4440602>
         rdf:type               pfn:answer ;
         rdfs:label             "Note-by-note navigation, score representation, playable on demand, browse and search specific measures" ;
         rdfs:seeAlso           "Note-by-note navigation, score representation, playable on demand, browse and search specific measures" ;
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/e836b619ef710db802cb0c80b4905a78e80018dc> ;
         pfn:hasQuestion_label  "What type of interaction do you expect should be supported by the Web portal?" .
+
+<https://polifonia-project.eu/resource/answer/dd3bacb1ac8d0049dafacda56358c776672922a8>
+        rdf:type               pfn:answer ;
+        rdfs:label             "Music Information retrieval" ;
+        rdfs:seeAlso           "Music Information retrieval; Machine Learning." ;
+        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/6885ede460472ba7e428311224a67e17251b26da> ;
+        pfn:hasQuestion_label  "To which discipline / subdiscipline  / specialty do you aim to contribute knowledge?  " .
 
 <https://polifonia-project.eu/resource/answer/30b0856485187fbafabed344cda8bd0a880a993a>
         rdf:type               pfn:answer ;
@@ -4123,19 +4123,19 @@
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/c443bafb28442ee4e104f86dfda8c2b658f3722f> ;
         pfn:hasQuestion_label  "What kind of ‘augmentation/enrichment’ do you expect to get out of being displayed via the portal?" .
 
-<https://polifonia-project.eu/resource/answer/39bd7890f3b1fa70ad8b341957a1566c6155af9b>
-        rdf:type               pfn:answer ;
-        rdfs:label             "Not yet clear." ;
-        rdfs:seeAlso           "Not yet clear." ;
-        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/cdce5812f38eeeb712c6689f20b3c1c5e840fdcd> ;
-        pfn:hasQuestion_label  "In which ways the Web portal shall link to the (separate) pilot demonstrator (if any)? " .
-
 <https://polifonia-project.eu/resource/answer/fdad1d544c5842ff1fd019d34b3922928ba5aa43>
         rdf:type               pfn:answer ;
         rdfs:label             "Analytical knowledge is produced through theoretical constructs that are based on hypotheses and are the result of certain assumptions. " ;
         rdfs:seeAlso           "Analytical knowledge is produced through theoretical constructs that are based on hypotheses and are the result of certain assumptions. " ;
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/fad0872eb66f110322ebac230daed175f1f0a9f4> ;
         pfn:hasQuestion_label  "Is the new knowledge purely descriptive? (e.g. a diplomatic transcription) " .
+
+<https://polifonia-project.eu/resource/answer/39bd7890f3b1fa70ad8b341957a1566c6155af9b>
+        rdf:type               pfn:answer ;
+        rdfs:label             "Not yet clear." ;
+        rdfs:seeAlso           "Not yet clear." ;
+        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/cdce5812f38eeeb712c6689f20b3c1c5e840fdcd> ;
+        pfn:hasQuestion_label  "In which ways the Web portal shall link to the (separate) pilot demonstrator (if any)? " .
 
 <https://polifonia-project.eu/resource/pilot/CHILD>
         rdf:type           pfn:pilot ;
@@ -5686,19 +5686,19 @@
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/c25b7a284ba0f1353249ea291abcb7021da2dfcb> ;
         pfn:hasQuestion_label  "What are the pilot's representative personas (please provide links)?" .
 
-<https://polifonia-project.eu/resource/answer/c33bb976263c7d3c756896506161ae4b41859cd3>
-        rdf:type               pfn:answer ;
-        rdfs:label             "Yes. The results should be interpreted by a music historian." ;
-        rdfs:seeAlso           "Yes. The results should be interpreted by a music historian." ;
-        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/41b73837b139462be5cb55cec515261648464d19> ;
-        pfn:hasQuestion_label  "Does the new knowledge involve an interpretation? And should the interpretative context made explicit through linked data? (e.g. \"Mrs X hypothesizes that this specific note N1 is an escape note, basing her opinion on these three annotations A1, A2, A3 and on this theoretical statement S1.\")" .
-
 <https://polifonia-project.eu/resource/answer/eea75328569efca5eec9c4823651e87478b5a39d>
         rdf:type               pfn:answer ;
         rdfs:label             "MusicXML, MEI,  MARC-XML, LY, JAMS" ;
         rdfs:seeAlso           "MusicXML, MEI,  MARC-XML, LY, JAMS" ;
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/e566949e66f27bc0f9d404a70d00c9b5b11a35f5> ;
         pfn:hasQuestion_label  "Datasets: What standards are used?" .
+
+<https://polifonia-project.eu/resource/answer/c33bb976263c7d3c756896506161ae4b41859cd3>
+        rdf:type               pfn:answer ;
+        rdfs:label             "Yes. The results should be interpreted by a music historian." ;
+        rdfs:seeAlso           "Yes. The results should be interpreted by a music historian." ;
+        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/41b73837b139462be5cb55cec515261648464d19> ;
+        pfn:hasQuestion_label  "Does the new knowledge involve an interpretation? And should the interpretative context made explicit through linked data? (e.g. \"Mrs X hypothesizes that this specific note N1 is an escape note, basing her opinion on these three annotations A1, A2, A3 and on this theoretical statement S1.\")" .
 
 <https://polifonia-project.eu/resource/answer/b6ef8e175665c325369074cab53268a8c3f2db85>
         rdf:type               pfn:answer ;
@@ -5846,19 +5846,19 @@
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/fad0872eb66f110322ebac230daed175f1f0a9f4> ;
         pfn:hasQuestion_label  "Is the new knowledge purely descriptive? (e.g. a diplomatic transcription) " .
 
-<https://polifonia-project.eu/resource/answer/2f8c5d92f94b553f5a5e7cf750d0cb8b7a419402>
-        rdf:type               pfn:answer ;
-        rdfs:label             "Academics;" ;
-        rdfs:seeAlso           "Academics;" ;
-        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/5cfb425536d5dc2ae4c60f226e2fb4817c873202> ;
-        pfn:hasQuestion_label  "What is the target group of your pilot?" .
-
 <https://polifonia-project.eu/resource/answer/d1acfdd8e71c4301b6ac2cd2489b93e0585e1aae>
         rdf:type               pfn:answer ;
         rdfs:label             "Paul, " ;
         rdfs:seeAlso           "Paul, ; Mark; Amy, ; Frank, " ;
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/c25b7a284ba0f1353249ea291abcb7021da2dfcb> ;
         pfn:hasQuestion_label  "What are the pilot's representative personas (please provide links)?" .
+
+<https://polifonia-project.eu/resource/answer/2f8c5d92f94b553f5a5e7cf750d0cb8b7a419402>
+        rdf:type               pfn:answer ;
+        rdfs:label             "Academics;" ;
+        rdfs:seeAlso           "Academics;" ;
+        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/5cfb425536d5dc2ae4c60f226e2fb4817c873202> ;
+        pfn:hasQuestion_label  "What is the target group of your pilot?" .
 
 <https://polifonia-project.eu/resource/question/f2a430831a8c3c2014f581ce31903d9b3bca8240>
         rdf:type           pfn:question ;
@@ -6066,19 +6066,19 @@
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/cee0d5cd7693c91f94456eebaedaedfe571b3ee3> ;
         pfn:hasQuestion_label  "What is the progress towards the pilot's objectives (please indicate %)" .
 
-<https://polifonia-project.eu/resource/answer/0fae524e6fe344fbdae219a634e46baef9c9a923>
-        rdf:type               pfn:answer ;
-        rdfs:label             "- collection of tools- issue: who will build this application ? - issue : how do we represent melodic contents as KG ?" ;
-        rdfs:seeAlso           "- collection of tools- issue: who will build this application ? - issue : how do we represent melodic contents as KG ?" ;
-        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/a1b4ff508ed64e4c8ff490f2e8c8b413cace8cb5> ;
-        pfn:hasQuestion_label  "What is the expected application to be released for this pilot?" .
-
 <https://polifonia-project.eu/resource/answer/6fd7779f15bc8015c7d2ceec6c15cd46a4a34a07>
         rdf:type               pfn:answer ;
         rdfs:label             "MuseData: Various HTML pages but a centralised dump exists (not publicly available, but can be used in the project)" ;
         rdfs:seeAlso           "Lakh: Over 7 different subsets/sets of files, but relating to one unique, centralised collection; MuseData: Various HTML pages but a centralised dump exists (not publicly available, but can be used in the project); MIDI Linked Data: One centralised dump file at http://midi-ld.amp.ops.labs.vu.nl, with other various subsets (e.g. lyrics); SLAC: One ZIP file on GitHub" ;
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/b7e2730df0cd64420d53d7fd7e40f3e23cf04aa0> ;
         pfn:hasQuestion_label  "How scattered is musical knowledge data over different sources?" .
+
+<https://polifonia-project.eu/resource/answer/0fae524e6fe344fbdae219a634e46baef9c9a923>
+        rdf:type               pfn:answer ;
+        rdfs:label             "- collection of tools- issue: who will build this application ? - issue : how do we represent melodic contents as KG ?" ;
+        rdfs:seeAlso           "- collection of tools- issue: who will build this application ? - issue : how do we represent melodic contents as KG ?" ;
+        pfn:hasQuestion        <https://polifonia-project.eu/resource/question/a1b4ff508ed64e4c8ff490f2e8c8b413cace8cb5> ;
+        pfn:hasQuestion_label  "What is the expected application to be released for this pilot?" .
 
 <https://polifonia-project.eu/resource/question/0904646edaac08c6ce7a61844cfe5565660c0038>
         rdf:type           pfn:question ;
