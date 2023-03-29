@@ -21,7 +21,8 @@ CONSTRUCT {
         rdfs:label ?question ;
         pfn:hasPart ?part_iri ;
         pfn:hasPart_label ?part ;
-        ?pilot_iri [ pfn:hasAnswer ?answer_concat ] .
+        ?pilot_iri ?answer_concat ;
+        pfn:hasAnswer ?answer_iri .
 
     ?answer_iri a pfn:answer ;
         rdfs:label ?answer ;
