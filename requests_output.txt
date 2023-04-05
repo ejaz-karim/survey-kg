@@ -1,0 +1,12 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>DBpedia Spotlight annotation</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+</head>
+<body>
+<div>
+"The primary goal is to populate an existing <a href="http://dbpedia.org/resource/Database" title="http://dbpedia.org/resource/Database" target="_blank">database</a>, developed by the NIvO (National Institute for Organ Art) with data extracted from the raw text of the organ encyclopedia.The NIvO already prepared a web-interface to the <a href="http://dbpedia.org/resource/Database" title="http://dbpedia.org/resource/Database" target="_blank">database</a>: pipeorgan.nlAdditionally a dashboard which allows exploration of the knowledge <a href="http://dbpedia.org/resource/Graph_database" title="http://dbpedia.org/resource/Graph_database" target="_blank">graph</a> that is extracted from the full text of the <a href="http://dbpedia.org/resource/Encyclopedia" title="http://dbpedia.org/resource/Encyclopedia" target="_blank">encyclopedia</a>. Various visualizations and querying methods could be included." ;
+</div>
+</body>
+</html>
