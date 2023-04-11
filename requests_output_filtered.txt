@@ -1,0 +1,3 @@
+http://dbpedia.org/resource/Database
+http://dbpedia.org/resource/Graph_database
+http://dbpedia.org/resource/Encyclopedia
