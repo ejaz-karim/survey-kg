@@ -1,9 +1,8 @@
+@prefix dbr:  <http://dbpedia.org/resource/> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix pfn:  <https://polifonia-project.eu/resource/> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix wd:   <http://www.wikidata.org/entity/> .
-@prefix wdt:  <http://www.wikidata.org/prop/direct/> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <https://polifonia-project.eu/resource/answer/d4e00c4264965806a4e7f6e2326caa31dff3d597>
@@ -44,6 +43,7 @@
         rdf:type               pfn:answer ;
         rdfs:label             "The primary goal is to populate an existing database, developed by the NIvO (National Institute for Organ Art) with data extracted from the raw text of the organ encyclopedia.The NIvO already prepared a web-interface to the database: pipeorgan.nlAdditionally a dashboard which allows exploration of the knowledge graph that is extracted from the full text of the encyclopedia. Various visualizations and querying methods could be included." ;
         rdfs:seeAlso           "The primary goal is to populate an existing database, developed by the NIvO (National Institute for Organ Art) with data extracted from the raw text of the organ encyclopedia.The NIvO already prepared a web-interface to the database: pipeorgan.nlAdditionally a dashboard which allows exploration of the knowledge graph that is extracted from the full text of the encyclopedia. Various visualizations and querying methods could be included." ;
+        dbr:hasResource        <http://dbpedia.org/resource/Database> ;
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/a1b4ff508ed64e4c8ff490f2e8c8b413cace8cb5> ;
         pfn:hasQuestion_label  "What is the expected application to be released for this pilot?" .
 

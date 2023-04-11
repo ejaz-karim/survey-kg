@@ -6,7 +6,7 @@
 </head>
 <body>
 <div>
-"The primary goal is to populate an existing <a href="http://dbpedia.org/resource/Database" title="http://dbpedia.org/resource/Database" target="_blank">database</a>, developed by the NIvO (National Institute for Organ Art) with data extracted from the raw text of the organ encyclopedia.The NIvO already prepared a web-interface to the <a href="http://dbpedia.org/resource/Database" title="http://dbpedia.org/resource/Database" target="_blank">database</a>: pipeorgan.nlAdditionally a dashboard which allows exploration of the knowledge <a href="http://dbpedia.org/resource/Graph_database" title="http://dbpedia.org/resource/Graph_database" target="_blank">graph</a> that is extracted from the full text of the <a href="http://dbpedia.org/resource/Encyclopedia" title="http://dbpedia.org/resource/Encyclopedia" target="_blank">encyclopedia</a>. Various visualizations and querying methods could be included." ;
+"https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica; https://www.internetculturale.it/it/15/termini-d-uso ; https://<a href="http://dbpedia.org/resource/Internet_Archive" title="http://dbpedia.org/resource/Internet_Archive" target="_blank">archive.org</a>/about/terms.php     http://www.bne.es/es/Inicio/index.html; https://books.google.com/intl/en/googlebooks/tos.html; https://about.jstor.org/terms/ " ;
 </div>
 </body>
 </html>

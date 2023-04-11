@@ -6,5 +6,5 @@ with open("requests_output.txt", "r", encoding="utf-8") as f, open("requests_out
         split = line.split('"')
         for word in split:
             if dbpedia in word and word not in lines_seen:
-                g.write(word + "\n")
+                g.write("        dbr:hasResource        <" + word + "> ;" + "\n")
                 lines_seen.add(word)
