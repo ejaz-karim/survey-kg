@@ -6,7 +6,7 @@
 </head>
 <body>
 <div>
-"https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica; https://www.internetculturale.it/it/15/termini-d-uso ; https://<a href="http://dbpedia.org/resource/Internet_Archive" title="http://dbpedia.org/resource/Internet_Archive" target="_blank">archive.org</a>/about/terms.php     http://www.bne.es/es/Inicio/index.html; https://books.google.com/intl/en/googlebooks/tos.html; https://about.jstor.org/terms/ " ;
+"Musical encounters to be retrieved and explored alongside other knowledge" ;
 </div>
 </body>
 </html>
