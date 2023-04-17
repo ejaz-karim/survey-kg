@@ -48,7 +48,6 @@
         dbr:hasResource        <http://dbpedia.org/resource/NIVO> ;
         dbr:hasResource        <http://dbpedia.org/resource/Knowledge_Graph> ;
         dbr:hasResource        <http://dbpedia.org/resource/Encyclopedia> ;
-        dbr:hasResource        <http://dbpedia.org/resource/Database> ;
         pfn:hasQuestion        <https://polifonia-project.eu/resource/question/a1b4ff508ed64e4c8ff490f2e8c8b413cace8cb5> ;
         pfn:hasQuestion_label  "What is the expected application to be released for this pilot?" .
 
