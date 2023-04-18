@@ -1,5 +1,6 @@
 import subprocess
 import time
+import pandas
 
 def time_api():
     start_time = time.time()
@@ -26,8 +27,27 @@ def dbr_count():
         count = count + 1
     print("dbr:hasResource appears " + str(count) + " times, the expected number is 809")
 
+def check_xlsx_column(column):
+    df = pandas.read_excel("surveyExtraction.xlsx")
+    data = df.iloc[:, column].astype(str).unique()
+    with open("survey7_modified.ttl", "r", encoding="utf-8") as f:
+        lines = f.readlines()
+        lines = [line.replace('\\"', '"') for line in lines]
+        not_present = [x for x in data if all(x not in line for line in lines)]
+        if len(not_present) > 0:
+            print(f"Not present:")
+            for value in not_present:
+                print(value)
+        else:
+            print(f"All data in column {column} is present in the .ttl file")
+
 def main():
     time_api()
     dbr_count()
+    check_xlsx_column(0)
+    check_xlsx_column(1)
+    check_xlsx_column(2)
+    check_xlsx_column(3)
+
 if __name__ == '__main__':
     main()
